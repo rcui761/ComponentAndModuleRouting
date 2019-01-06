@@ -5,13 +5,13 @@ import { CountryListComponent} from './country-list-detail/country-list-detail.c
 
 const routes: Routes = [
     {
-        path: 'Country',
+        path: '',
         component: CountryPageDetailComponent,
     },
-/*     {
-        path: 'Country/:id',
+    {
+        path: ':id',
         component: CountryListComponent,
-    } */
+    }
 ];
 
 @NgModule({

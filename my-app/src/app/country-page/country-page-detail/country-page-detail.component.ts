@@ -14,7 +14,6 @@ export class CountryPageDetailComponent implements OnInit {
     ];
 
     constructor() {
-
         console.log(this.Countries[1].id);
     }
 
