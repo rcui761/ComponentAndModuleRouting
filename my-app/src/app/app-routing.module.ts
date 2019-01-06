@@ -11,6 +11,10 @@ import { Routes, RouterModule } from '@angular/router';
       {
         path: 'Language',
         loadChildren: './language-page/language-page.module#LanguageModule',
+      },
+      {
+        path: 'Country',
+        loadChildren: './country-page/country-page.module#CountryModule',
       }
     ])
   ],

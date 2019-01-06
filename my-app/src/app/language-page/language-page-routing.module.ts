@@ -1,11 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-//import { HomePageDetailComponent } from './home-page-detail/home-page-detail.component';
+import { LanguagePageDetailComponent} from './language-page-detail/language-page-detail.component';
+import { LanguageEnglishDetailComponent} from './language-english-detail/language-english-detail.component';
+import { LanguageChineseDetailComponent} from './language-chinese-detail/language-chinese-detail.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: HomePageDetailComponent
+        component: LanguagePageDetailComponent,
+        children: [
+            {
+                path: '',
+                children: [
+                    {
+                        path: 'English',
+                        component: LanguageEnglishDetailComponent
+                    },
+                    {
+                        path: 'Chinese',
+                        component: LanguageChineseDetailComponent
+                    }
+
+                ]
+            }
+        ]
     }
 ];
 
