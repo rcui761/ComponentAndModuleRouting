@@ -15,7 +15,8 @@ import { Routes, RouterModule } from '@angular/router';
       {
         path: 'Country',
         loadChildren: './country-page/country-page.module#CountryModule',
-      }
+      },
+      { path: '',   redirectTo: '/Home', pathMatch: 'full' },
     ])
   ],
   exports: [RouterModule]
