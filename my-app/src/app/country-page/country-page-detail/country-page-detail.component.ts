@@ -9,11 +9,13 @@ import { Router } from '@angular/router';
 
 export class CountryPageDetailComponent implements OnInit {
     Countries: Country[] = [
-        { id: 1, name : 'New Zealand' },
-        { id: 2, name : 'China' },
+        { id: 1, name: 'New Zealand' },
+        { id: 2, name: 'China' },
     ];
 
     constructor() {
+
+        console.log(this.Countries[1].id);
     }
 
     ngOnInit() {

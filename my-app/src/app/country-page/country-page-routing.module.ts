@@ -8,10 +8,10 @@ const routes: Routes = [
         path: 'Country',
         component: CountryPageDetailComponent,
     },
-    {
+/*     {
         path: 'Country/:id',
         component: CountryListComponent,
-    }
+    } */
 ];
 
 @NgModule({
